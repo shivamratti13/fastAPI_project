@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta, timezone
 from app.core.config import settings
-from jose import JWTError,jwt
+from jose import jwt, JWTError
 
 def create_token(data: dict, expire_minutes=30):
     to_encode = data.copy()
